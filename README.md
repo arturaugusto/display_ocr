@@ -14,3 +14,5 @@ Reference: https://code.google.com/p/python-tesseract/
 Tips to achieve better results:
   - Use erode to avoid gaps between the segments.
   - Avoid direct light on the display (I use parchment paper to diffuse the light)
+
+License: GPL v2
