@@ -100,7 +100,7 @@ if __name__ == '__main__':
     expected_value_desv = 20
     #####################################################################
     # Video capture
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     # Tesseract config
     api = tesseract.TessBaseAPI()
     api.Init(".",ConfigSectionMap("OCR")['fonttype'],tesseract.OEM_DEFAULT)
@@ -139,7 +139,7 @@ if __name__ == '__main__':
     cv2.namedWindow('frame')
     # Show black image as selected at first
     cv2.namedWindow('selection')
-    display = np.zeros((100,100,3), np.uint8)
+    display = np.zeros((200,200,3), np.uint8)
     cv2.imshow('frame', display)
 
     # GUI
