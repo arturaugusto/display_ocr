@@ -168,7 +168,7 @@ if __name__ == '__main__':
     phase_stack_size = 4
     control_moving = False
     moviment_trigger = 40
-    while(True):
+    while True:
         # Capture frame-by-frame
         ret, frame = cap.read()
         # add menu
@@ -213,10 +213,11 @@ if __name__ == '__main__':
             cv.SetData(iplimage, display.tostring(), display.dtype.itemsize * channel * (width))
             Recognize(iplimage)
         c = cv.WaitKey(20)
-        if(c == "q"):
+        if c == "q":
             break
         if stopOpenCv:
             break
     # When everything done, release the capture
     cap.release()
     cv2.destroyAllWindows()
+
