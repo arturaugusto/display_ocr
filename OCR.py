@@ -43,8 +43,12 @@ def OnClose(event):
 def Recognize(iplimage):
     global meas_stack
     tesseract.SetCvImage(iplimage, api)
-    full_text = ""
-    full_text = api.GetUTF8Text()
+
+    try:
+        full_text = api.GetUTF8Text()
+    except AttributeError:
+        full_text = api.GetUNLVText()
+
     conf = api.MeanTextConf()
     # Ger the first line found by tesseract
     for index, text in enumerate(full_text.split('\n')):
