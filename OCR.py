@@ -171,6 +171,8 @@ if __name__ == '__main__':
     while True:
         # Capture frame-by-frame
         ret, frame = cap.read()
+        if frame is None:
+            break
         # add menu
         frame_h, frame_w = frame.shape[:2]
         frame[0:menu.shape[0], 0:menu.shape[1]] = menu
