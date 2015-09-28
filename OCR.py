@@ -116,6 +116,7 @@ if __name__ == '__main__':
     api.Init(".", ConfigSectionMap("OCR")['fonttype'], tesseract.OEM_DEFAULT)
     api.SetVariable("tessedit_char_whitelist", ConfigSectionMap("OCR")['whitelist'])
     api.SetPageSegMode(tesseract.PSM_AUTO)
+    api.SetVariable("debug_file", "/dev/null")
 
     def nothing(x):
         pass
