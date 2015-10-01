@@ -47,7 +47,7 @@ def Recognize(iplimage):
     try:
         full_text = api.GetUTF8Text()
     except AttributeError:
-        full_text = api.GetUNLVText()
+        full_text = api.GetUNLVText().replace("^", "")
 
     conf = api.MeanTextConf()
     # Ger the first line found by tesseract
