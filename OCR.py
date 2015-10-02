@@ -137,7 +137,7 @@ if __name__ == '__main__':
                 if x > 153 and x < 190:
                     OnClose(event)
                 if x > 195 and x < 252:
-                    print "Author: Artur Augusto Martins (arturaugusto@gmail.com).\nOpenSource Development: https://github.com/arturaugusto/display_ocr.\nBased on examples availables at https://code.google.com/p/python-tesseract/.\nGPLv2 License"
+                    print "OpenSource Development: https://github.com/arturaugusto/display_ocr.\nBased on examples availables at https://code.google.com/p/python-tesseract/.\nGPLv2 License"
             else:
                 drawing = True
                 start_x, start_y = x, y
