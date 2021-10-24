@@ -1,6 +1,13 @@
 Display OCR
 ===========
 
+Unmaintained. Alternative traineddata avaliable at [https://github.com/Shreeshrii/tessdata_ssd](https://github.com/Shreeshrii/tessdata_ssd) or alternative implementation that don't use tesseract: [https://github.com/arturaugusto/7seg-ocr](https://github.com/arturaugusto/7seg-ocr).
+
+
+---
+
+
+
 OpenCV-Python + python-tesseract real-time image preprocess and OCR.
 
 ![alt tag](img/example.png)
